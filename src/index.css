@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-greenDeep: #1a2e1a;
+  --color-greenMid: #2d4a2d;
+  --color-greenLight: #4a7c4a;
+  --color-amber: #c8852a;
+  --color-amberLight: #e8a84a;
+  --color-cream: #f5f0e8;
+}
+
+@theme {
+  --animate-marquee: marquee 30s linear infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
