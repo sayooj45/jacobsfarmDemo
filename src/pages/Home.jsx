@@ -8,6 +8,9 @@ import Footer from "../components/footer/Footer";
 import Cursor from "../components/home/Cursor";
 import Marquee from "../components/home/Marquee";
 import Feature from "../components/home/Feature";
+import WhyUs from "../components/WhyUs";
+import Quote from "../components/Quote";
+
 // import ImageBreak from "../components/home/ImageBreak";
 
 const Home = () => {
@@ -20,8 +23,10 @@ const Home = () => {
       <Marquee />
       <About />
       <div className="h-[6px] bg-gradient-to-r from-greenDeep via-amber to-greenMid"></div>
+      <WhyUs />
       <Experiences />
       <Feature />
+      <Quote />
       <Booking />
       <Footer />
     </div>

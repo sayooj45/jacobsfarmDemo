@@ -9,7 +9,7 @@ const data = [
 
 export default function Experiences() {
   return (
-    <section id="experiences" className="bg-cream py-28 px-6 md:px-20">
+    <section id="experiences" className="bg-cream py-32 px-6 md:px-20">
       <h2 className="text-center text-5xl font-serif mb-20">
         The Farm <span className="italic text-amber">Experiences</span>
       </h2>
@@ -18,7 +18,7 @@ export default function Experiences() {
         {data.map((item, i) => (
           <div
             key={i}
-            className="p-10 bg-white hover:bg-greenDeep transition group"
+            className="p-10 bg-white hover:bg-greenDeep transition duration-300 rounded-lg shadow-sm hover:shadow-lg group"
           >
             <h3 className="text-2xl font-serif group-hover:text-white">
               {item}

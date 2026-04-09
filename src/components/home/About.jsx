@@ -1,10 +1,11 @@
+import durian from "../../assets/images/durian.jpg";
 export default function About() {
   return (
     <section id="about" className="py-28 px-6 md:px-20">
       <div className="grid md:grid-cols-2 gap-16 items-center">
         <div className="h-[500px] w-full overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1693399991519-bef70bed19a2?q=80&w=688&auto=format&fit=crop"
+            src={durian}
             alt="durian farm"
             className="w-full h-full object-cover"
           />
