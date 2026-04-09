@@ -1,11 +1,10 @@
-// import video from "../../assets/videos/heroVideo.mp4";
 import logo from "../../assets/images/logo.png";
-// import video from "../../assets/images/videoScreenshot.png";
+
 export default function Hero() {
   return (
     <section
       id="hero"
-      className="h-screen flex items-center justify-center relative overflow-hidden"
+      className="relative w-full min-h-[100svh] flex items-center justify-center overflow-hidden"
     >
       {/* 🎥 Video Background */}
       <video
@@ -13,42 +12,52 @@ export default function Hero() {
         muted
         loop
         playsInline
-        className="absolute inset-0 w-full h-full object-cover scale-105"
+        className="absolute inset-0 w-full h-full object-cover scale-110"
       >
         <source
           src="https://jacobsdurainfarm.blr1.cdn.digitaloceanspaces.com/content/heroVideo%20(1).mp4"
           type="video/mp4"
         />
       </video>
-      {/* <img
-        src={video}
-        alt="video"
-        className="absolute inset-0 w-full h-full object-cover scale-105"
-      /> */}
 
-      {/* 🌑 Overlay (VERY IMPORTANT for readability) */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/70"></div>
+      {/* 🌑 Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/80"></div>
 
-      {/* Content */}
-      <div className="relative text-center text-white z-10 px-6 max-w-4xl mx-auto">
-        {/* Location */}
-        <p className="tracking-[0.4em] text-amberLight text-[10px] sm:text-xs mb-8 uppercase">
+      {/* 🌿 Content */}
+      <div className="relative z-10 text-center text-white px-5 sm:px-8 md:px-12 max-w-5xl mx-auto">
+        {/* 📍 Location */}
+        <p className="tracking-[0.35em] text-amberLight text-[9px] sm:text-xs md:text-sm mb-6 sm:mb-8 uppercase">
           Kanjirapally · Kerala · India
         </p>
 
-        {/* MAIN TAGLINE (BIG) */}
-        <p
-          className="font-serif italic leading-[1.15] tracking-tight
-  text-[22px] sm:text-[30px] md:text-[40px] lg:text-[52px]
-  text-white drop-shadow-[0_10px_30px_rgba(0,0,0,0.5)]"
+        {/* 🏷️ Main Heading */}
+        <h1
+          className="
+            font-serif italic leading-[1.2] tracking-tight
+            text-[20px]
+            sm:text-[28px]
+            md:text-[38px]
+            lg:text-[52px]
+            xl:text-[60px]
+            drop-shadow-[0_10px_30px_rgba(0,0,0,0.6)]
+          "
         >
-          India’s first durian farm <br />
-          showcasing <span className="text-amberLight">
-            42 rare varieties
-          </span>, <br />
-          and an ecosystem <br />
+          India’s first durian farm <br className="hidden sm:block" />
+          showcasing <span className="text-amberLight">42 rare varieties</span>
+          , <br className="hidden sm:block" />
+          and an ecosystem <br className="hidden sm:block" />
           beyond the ordinary
-        </p>
+        </h1>
+
+        {/* 🔘 Optional CTA */}
+        <div className="mt-8 sm:mt-10 flex justify-center">
+          <a
+            href="#experiences"
+            className="px-6 py-3 text-xs sm:text-sm tracking-widest uppercase border border-white/40 hover:bg-white hover:text-black transition-all duration-500"
+          >
+            Explore Experiences
+          </a>
+        </div>
       </div>
     </section>
   );
