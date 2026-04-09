@@ -38,8 +38,8 @@ export default function Hero() {
 
         {/* MAIN TAGLINE (BIG) */}
         <p
-          className="font-serif italic leading-[1.1] tracking-tight
-  text-[28px] sm:text-[40px] md:text-[56px] lg:text-[72px]
+          className="font-serif italic leading-[1.15] tracking-tight
+  text-[22px] sm:text-[30px] md:text-[40px] lg:text-[52px]
   text-white drop-shadow-[0_10px_30px_rgba(0,0,0,0.5)]"
         >
           India’s first durian farm <br />
