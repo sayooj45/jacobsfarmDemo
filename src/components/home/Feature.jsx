@@ -36,7 +36,7 @@ export default function Feature() {
           <div
             className="h-[350px] md:h-[450px] w-full bg-cover bg-center rounded-xl shadow-lg"
             style={{
-              backgroundImage: { durianbig },
+              backgroundImage: `url(${durianbig})`,
             }}
           />
 
@@ -44,7 +44,7 @@ export default function Feature() {
           <div
             className="hidden md:block absolute -bottom-10 -left-10 w-40 h-40 bg-cover bg-center rounded-lg shadow-md border border-white/10"
             style={{
-              backgroundImage: { duriansmall },
+              backgroundImage: `url(${duriansmall})`,
             }}
           />
         </div>

@@ -37,13 +37,13 @@ export default function Hero() {
         </p>
 
         {/* MAIN TAGLINE (BIG) */}
-        <p
+        {/* <p
           className="font-serif italic leading-tight 
     text-[28px] sm:text-[40px] md:text-[56px] lg:text-[72px] 
     text-white drop-shadow-[0_10px_30px_rgba(0,0,0,0.5)]"
         >
           India’s First Durian Destination
-        </p>
+        </p> */}
       </div>
     </section>
   );
